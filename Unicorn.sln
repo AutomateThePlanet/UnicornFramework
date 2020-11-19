@@ -63,7 +63,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Unicorn.Rest.Plugins", "Uni
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Unicorn.Web.Proxy", "Unicorn.Web.Proxy\Unicorn.Web.Proxy.csproj", "{2372CF13-5763-48CA-B1D4-412F25433FB7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unicorn.Utilities", "Unicorn.Utilities\Unicorn.Utilities.csproj", "{049EBDFC-1692-4D6F-B279-A59E52DC11B1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Unicorn.Utilities", "Unicorn.Utilities\Unicorn.Utilities.csproj", "{049EBDFC-1692-4D6F-B279-A59E52DC11B1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -219,8 +219,8 @@ Global
 		{2372CF13-5763-48CA-B1D4-412F25433FB7}.Release|Any CPU.Build.0 = Release|Any CPU
 		{049EBDFC-1692-4D6F-B279-A59E52DC11B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{049EBDFC-1692-4D6F-B279-A59E52DC11B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{049EBDFC-1692-4D6F-B279-A59E52DC11B1}.Local|Any CPU.ActiveCfg = Debug|Any CPU
-		{049EBDFC-1692-4D6F-B279-A59E52DC11B1}.Local|Any CPU.Build.0 = Debug|Any CPU
+		{049EBDFC-1692-4D6F-B279-A59E52DC11B1}.Local|Any CPU.ActiveCfg = Local|Any CPU
+		{049EBDFC-1692-4D6F-B279-A59E52DC11B1}.Local|Any CPU.Build.0 = Local|Any CPU
 		{049EBDFC-1692-4D6F-B279-A59E52DC11B1}.QA|Any CPU.ActiveCfg = Debug|Any CPU
 		{049EBDFC-1692-4D6F-B279-A59E52DC11B1}.QA|Any CPU.Build.0 = Debug|Any CPU
 		{049EBDFC-1692-4D6F-B279-A59E52DC11B1}.Release|Any CPU.ActiveCfg = Release|Any CPU

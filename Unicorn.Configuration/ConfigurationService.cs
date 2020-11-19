@@ -4,7 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 
-namespace Unicorn.Configuration
+namespace Unicorn
 {
     public class ConfigurationService
     {

@@ -8,5 +8,12 @@
     "elementToBeClickableTimeout": "60",
     "elementNotToBeVisibleTimeout": "60",
     "elementToHaveContentTimeout": "15"
+  },
+  "loggingSettings": {
+    "isEnabled": "true",
+    "isConsoleLoggingEnabled": "true",
+    "isDebugLoggingEnabled": "false",
+    "isFileLoggingEnabled": "true",
+    "outputTemplate": "[{Timestamp:HH:mm:ss}] {Message:lj}{NewLine}"
   }
 }
