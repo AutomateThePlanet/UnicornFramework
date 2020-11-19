@@ -1,7 +1,4 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-	<PropertyGroup>
-	  <Configurations>Debug;Release;QA;Local</Configurations>
-	</PropertyGroup>
 	<Import Project="..\sharedinfo.targets" />
 	<ItemGroup>
 	  <PackageReference Include="Unity" Version="5.11.7" />
