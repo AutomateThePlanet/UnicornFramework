@@ -1,0 +1,101 @@
+Unicorn Test Automation Framework
+
+** High-Level Requirements:
+- private closed sourced
+- test web, desktop, mobile, REST
+- integration - existing tooling - execute tests in CI
+- cross platform
+- unified API
+- documentation + starter kit/learning guide
+- specflow? - no
+
+** Framework Characteristics
+- test reliability
+- easy to learn
+- test readability
+- extensible
+- maintainable
+- troubleshooting easiness - screenshots, videos, logs
+- unified team convention rules - StyleCop? documentation policies?
+- advanced scenarios support - PDF verification, responsive/layout testing
+
+Short Research Phase
+15 mins
+
+** Detailed Requirements
+
+WebDriver, Appium, WinAppDriver, RestSharp
+NUnit
+Ghost Doc - /// <summary>
+AzureDevOps CI
+Selenium Grid
+no SpecFlow
+StyleCop
+
+----------------------------------
+Detailed Features Breakdown:
+------------------
+
+- test reliability
+handle all sync issues
+smart wait assertions
+
+- easy to learn
+similar API
+getting started guide
+add summary on methods (GhostDoc)
+documentation
+
+- faster tests creation
+handy elements locators wrappers
+handy wait methods wrappers
+
+- test readability
+page objects usage enabled
+BDD logging
+app design pattern
+
+- extensible
+plugin architecture (Observer design pattern)
+delegates - hooks 
+adding new locators
+adding new waiters
+
+- maintainable
+abstracting the code so that we don't duplicate it (proper project structure to reuse everthing, abstract it)
+support JSON configuration
+inversion of control container internally
+support facades?
+webdriverManager
+
+- troubleshooting easiness
+full-page/normal screenshot on failure
+videos on failure
+logging to console/file
+
+- unified team convention rules
+integrate StyleCop
+- advanced scenarios support
+support resoponsive/layout testing
+
+
+
+
+----------------
+Research:
+Squish GUI Test Automation Tool 
+https://www.froglogic.com/squish/?r=qal-qaat
+https://www.testing-whiz.com/?r=qal-qaat
+https://www.katalon.com/?r=qal-qaat
+https://www.telerik.com/teststudio?r=qal-qaat
+https://www.microfocus.com/en-us/products/uft-one/overview?r=qal-qaat
+https://smartbear.com/product/testcomplete/overview/?r=qal-qaat
+--------------
+Open source framework
+https://selenide.org/
+Objectivity Ocaramba
+https://github.com/ObjectivityLtd/Ocaramba
+JDI framework
+https://jdi.epam.com/
+atata framework
+https://atata.io/
