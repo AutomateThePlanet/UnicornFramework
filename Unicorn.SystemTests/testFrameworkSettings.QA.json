@@ -1,0 +1,12 @@
+{
+  "timeoutSettings": {
+    "waitForAjaxTimeout": "60",
+    "sleepInterval": "1",
+    "elementToBeVisibleTimeout": "60",
+    "elementToExistTimeout": "60",
+    "elementToNotExistTimeout": "60",
+    "elementToBeClickableTimeout": "60",
+    "elementNotToBeVisibleTimeout": "60",
+    "elementToHaveContentTimeout": "15"
+  }
+}
