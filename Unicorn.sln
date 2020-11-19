@@ -3,29 +3,29 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30711.63
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unicorn.NUnit", "Unicorn.NUnit\Unicorn.NUnit.csproj", "{9179C96D-2EF2-4D5E-AC45-AFF2B0908B1B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Unicorn.NUnit", "Unicorn.NUnit\Unicorn.NUnit.csproj", "{9179C96D-2EF2-4D5E-AC45-AFF2B0908B1B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{069818B8-BD0A-4A77-92F2-1231B226856F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{12C92E0F-5193-4DED-A2B9-BA3443EB8360}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unicorn.SystemTests", "Unicorn.SystemTests\Unicorn.SystemTests.csproj", "{6B04D222-C584-49A8-A8EF-98E7943F611B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Unicorn.SystemTests", "Unicorn.SystemTests\Unicorn.SystemTests.csproj", "{6B04D222-C584-49A8-A8EF-98E7943F611B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unicorn.Web", "Unicorn.Web\Unicorn.Web.csproj", "{F5A41379-57F4-4616-ACB5-C3D00A1F7246}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Unicorn.Web", "Unicorn.Web\Unicorn.Web.csproj", "{F5A41379-57F4-4616-ACB5-C3D00A1F7246}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unicorn.Desktop", "Unicorn.Desktop\Unicorn.Desktop.csproj", "{FAA88C15-10F2-44BD-8FFF-B3D4B8D556E7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Unicorn.Desktop", "Unicorn.Desktop\Unicorn.Desktop.csproj", "{FAA88C15-10F2-44BD-8FFF-B3D4B8D556E7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unicorn.Mobile", "Unicorn.Mobile\Unicorn.Mobile.csproj", "{3137E1D7-5C99-4200-805F-8E1667A07E64}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Unicorn.Mobile", "Unicorn.Mobile\Unicorn.Mobile.csproj", "{3137E1D7-5C99-4200-805F-8E1667A07E64}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unicorn.Rest", "Unicorn.Rest\Unicorn.Rest.csproj", "{9C114D05-A5DA-4932-B324-13872B4588CA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Unicorn.Rest", "Unicorn.Rest\Unicorn.Rest.csproj", "{9C114D05-A5DA-4932-B324-13872B4588CA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unicorn.Container", "Unicorn.Container\Unicorn.Container.csproj", "{A0CC7E80-49A4-40BE-A763-AFF5AE6A7A47}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Unicorn.Container", "Unicorn.Container\Unicorn.Container.csproj", "{A0CC7E80-49A4-40BE-A763-AFF5AE6A7A47}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unicorn.App", "Unicorn.App\Unicorn.App.csproj", "{E82638C0-85EF-4F10-A25F-A65C88C2AF43}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Unicorn.App", "Unicorn.App\Unicorn.App.csproj", "{E82638C0-85EF-4F10-A25F-A65C88C2AF43}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unicorn.Configuration", "Unicorn.Configuration\Unicorn.Configuration.csproj", "{6F95C55C-D1AD-441B-88A1-BF817F077A73}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Unicorn.Configuration", "Unicorn.Configuration\Unicorn.Configuration.csproj", "{6F95C55C-D1AD-441B-88A1-BF817F077A73}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unicorn.Logging", "Unicorn.Logging\Unicorn.Logging.csproj", "{03F29F74-E4BF-4076-94C8-650449A2ED77}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Unicorn.Logging", "Unicorn.Logging\Unicorn.Logging.csproj", "{03F29F74-E4BF-4076-94C8-650449A2ED77}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "core", "core", "{212BD6F3-AA08-41D0-ABC8-2FCFD30981E8}"
 EndProject
@@ -37,11 +37,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "desktop", "desktop", "{0AB5
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "rest", "rest", "{2C669FA4-9010-4C88-A538-85650538CABC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unicorn.Plugins", "Unicorn.Plugins\Unicorn.Plugins.csproj", "{36D135BC-35EA-4F2B-8DB2-D951E891704B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Unicorn.Plugins", "Unicorn.Plugins\Unicorn.Plugins.csproj", "{36D135BC-35EA-4F2B-8DB2-D951E891704B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unicorn.Plugins.Screenshot", "Unicorn.Plugins.Screenshots\Unicorn.Plugins.Screenshot.csproj", "{668DBFA4-E73A-4696-9A5D-5CD86E813AC2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Unicorn.Plugins.Screenshot", "Unicorn.Plugins.Screenshots\Unicorn.Plugins.Screenshot.csproj", "{668DBFA4-E73A-4696-9A5D-5CD86E813AC2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unicorn.Plugins.VideoRecording", "Unicorn.Plugins.VideoRecording\Unicorn.Plugins.VideoRecording.csproj", "{B2C1D2C7-B1F3-4985-9E1B-7D8467725EF7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Unicorn.Plugins.VideoRecording", "Unicorn.Plugins.VideoRecording\Unicorn.Plugins.VideoRecording.csproj", "{B2C1D2C7-B1F3-4985-9E1B-7D8467725EF7}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{669325E1-B288-4E27-81AB-5F048F4188B6}"
 	ProjectSection(SolutionItems) = preProject
@@ -50,17 +50,18 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		sharedinfo.targets = sharedinfo.targets
 		stylecop.json = stylecop.json
 		StyleCopeRules.ruleset = StyleCopeRules.ruleset
+		unicorn-icon.png = unicorn-icon.png
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unicorn.Web.Plugins.Browser", "Unicorn.Web.Plugins.Browser\Unicorn.Web.Plugins.Browser.csproj", "{D5E05E15-9B15-44BA-8915-6F88131042A0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Unicorn.Web.Plugins.Browser", "Unicorn.Web.Plugins.Browser\Unicorn.Web.Plugins.Browser.csproj", "{D5E05E15-9B15-44BA-8915-6F88131042A0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unicorn.Desktop.Plugins", "Unicorn.Desktop.Plugins\Unicorn.Desktop.Plugins.csproj", "{E596D713-4A7E-4F07-B554-B0F31EF19986}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Unicorn.Desktop.Plugins", "Unicorn.Desktop.Plugins\Unicorn.Desktop.Plugins.csproj", "{E596D713-4A7E-4F07-B554-B0F31EF19986}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unicorn.Mobile.Plugins", "Unicorn.Mobile.Plugins\Unicorn.Mobile.Plugins.csproj", "{21F29F05-0994-4E99-ABB1-7720B7E96910}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Unicorn.Mobile.Plugins", "Unicorn.Mobile.Plugins\Unicorn.Mobile.Plugins.csproj", "{21F29F05-0994-4E99-ABB1-7720B7E96910}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unicorn.Rest.Plugins", "Unicorn.Rest.Plugins\Unicorn.Rest.Plugins.csproj", "{7B86CC06-179F-4F33-BD48-354E984FC8D9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Unicorn.Rest.Plugins", "Unicorn.Rest.Plugins\Unicorn.Rest.Plugins.csproj", "{7B86CC06-179F-4F33-BD48-354E984FC8D9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unicorn.Web.Proxy", "Unicorn.Web.Proxy\Unicorn.Web.Proxy.csproj", "{2372CF13-5763-48CA-B1D4-412F25433FB7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Unicorn.Web.Proxy", "Unicorn.Web.Proxy\Unicorn.Web.Proxy.csproj", "{2372CF13-5763-48CA-B1D4-412F25433FB7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
