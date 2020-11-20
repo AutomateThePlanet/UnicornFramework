@@ -24,6 +24,16 @@ namespace Unicorn.Plugins
             _testExecutionPlugins.Remove(observer);
         }
 
+        public void PreClassInit(MemberInfo memberInfo)
+        {
+            _testExecutionPlugins.ForEach(p => p.PreClassInit(memberInfo));
+        }
+
+        public void PostClassInit(MemberInfo memberInfo)
+        {
+            _testExecutionPlugins.ForEach(p => p.PostClassInit(memberInfo));
+        }
+
         public void PostTestCleanup(TestOutcome testOutcome, MemberInfo memberInfo)
         {
             _testExecutionPlugins.ForEach(p => p.PostTestCleanup(testOutcome, memberInfo));

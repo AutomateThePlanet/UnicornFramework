@@ -15,11 +15,11 @@ namespace Unicorn.Plugins
             _testExecutionSubject.Attach(this);
         }
 
-        public virtual void PostTestCleanup(TestOutcome testOutcome, MemberInfo memberInfo)
+        public virtual void PreClassInit(MemberInfo memberInfo)
         {
         }
 
-        public virtual void PostTestInit(MemberInfo memberInfo)
+        public virtual void PostClassInit(MemberInfo memberInfo)
         {
         }
 
@@ -32,6 +32,14 @@ namespace Unicorn.Plugins
         }
 
         public virtual void TestInstantiated(MemberInfo memberInfo)
+        {
+        }
+
+        public virtual void PostTestCleanup(TestOutcome testOutcome, MemberInfo memberInfo)
+        {
+        }
+
+        public virtual void PostTestInit(MemberInfo memberInfo)
         {
         }
     }
