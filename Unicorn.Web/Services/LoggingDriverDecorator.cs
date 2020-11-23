@@ -25,81 +25,11 @@ namespace Unicorn.Web.Services
             return base.ClickAndHold(element);
         }
 
-        public List<Element> CreateAll(FindStrategy findStrategy)
+        public List<TElement> CreateAll<TElement>(FindStrategy findStrategy)
+            where TElement : Element
         {
             Console.WriteLine("call CreateAll");
-            return base.CreateAll(findStrategy);
-        }
-
-        public List<Element> CreateAllByClass(string cssClass)
-        {
-            Console.WriteLine($"call {nameof(CreateAllByClass)}");
-            return base.CreateAllByClass(cssClass);
-        }
-
-        public List<Element> CreateAllByCss(string css)
-        {
-            Console.WriteLine($"call {nameof(CreateAllByCss)}");
-            return base.CreateAllByCss(css);
-        }
-
-        public List<Element> CreateAllById(string id)
-        {
-            Console.WriteLine($"call {nameof(CreateAllById)}");
-            return base.CreateAllById(id);
-        }
-
-        public List<Element> CreateAllByLinkText(string linkText)
-        {
-            Console.WriteLine($"call {nameof(CreateAllByLinkText)}");
-            return base.CreateAllByLinkText(linkText);
-        }
-
-        public List<Element> CreateAllByTag(string tag)
-        {
-            Console.WriteLine($"call {nameof(CreateAllByTag)}");
-            return base.CreateAllByTag(tag);
-        }
-
-        public List<Element> CreateAllByXPath(string xpath)
-        {
-            Console.WriteLine($"call {nameof(CreateAllByXPath)}");
-            return base.CreateAllByXPath(xpath);
-        }
-
-        public Element CreateByClass(string cssClass)
-        {
-            Console.WriteLine($"call {nameof(CreateByClass)}");
-            return base.CreateByClass(cssClass);
-        }
-
-        public Element CreateByCss(string css)
-        {
-            Console.WriteLine($"call {nameof(CreateByCss)}");
-            return base.CreateByCss(css);
-        }
-
-        public Element CreateById(string id)
-        {
-            Console.WriteLine($"call {nameof(CreateById)}");
-            return base.CreateById(id);
-        }
-
-        public Element CreateByLinkText(string linkText)
-        {
-            Console.WriteLine($"call {nameof(CreateByLinkText)}");
-            return base.CreateByLinkText(linkText);
-        }
-
-        public Element CreateByTag(string tag)
-        {
-            Console.WriteLine($"call {nameof(CreateByTag)}");
-            return base.CreateByTag(tag);
-        }
-
-        public Element CreateByXPath(string xpath)
-        {
-            return base.CreateByXPath(xpath);
+            return base.CreateAll<TElement>(findStrategy);
         }
 
         public void DeleteAllCookies()
@@ -125,11 +55,6 @@ namespace Unicorn.Web.Services
         public object Execute(string script)
         {
             return base.Execute(script);
-        }
-
-        public Element Find(FindStrategy findStrategy)
-        {
-            return base.Create(findStrategy);
         }
 
         public List<Cookie> GetAllCookies()

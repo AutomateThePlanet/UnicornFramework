@@ -7,20 +7,34 @@ namespace Unicorn.Web
 {
     public interface IElementCreateService
     {
-        Element CreateById(string id);
-        Element CreateByXPath(string xpath);
-        Element CreateByTag(string tag);
-        Element CreateByClass(string cssClass);
-        Element CreateByCss(string css);
-        Element CreateByLinkText(string linkText);
-        List<Element> CreateAllById(string id);
-        List<Element> CreateAllByXPath(string xpath);
-        List<Element> CreateAllByTag(string tag);
-        List<Element> CreateAllByClass(string cssClass);
-        List<Element> CreateAllByCss(string css);
-        List<Element> CreateAllByLinkText(string linkText);
+        TElement CreateById<TElement>(string id)
+            where TElement : Element;
+        TElement CreateByXPath<TElement>(string xpath)
+            where TElement : Element;
+        TElement CreateByTag<TElement>(string tag)
+            where TElement : Element;
+        TElement CreateByClass<TElement>(string cssClass)
+            where TElement : Element;
+        TElement CreateByCss<TElement>(string css)
+            where TElement : Element;
+        TElement CreateByLinkText<TElement>(string linkText)
+            where TElement : Element;
+        List<TElement> CreateAllById<TElement>(string id)
+            where TElement : Element;
+        List<TElement> CreateAllByXPath<TElement>(string xpath)
+            where TElement : Element;
+        List<TElement> CreateAllByTag<TElement>(string tag)
+            where TElement : Element;
+        List<TElement> CreateAllByClass<TElement>(string cssClass)
+            where TElement : Element;
+        List<TElement> CreateAllByCss<TElement>(string css)
+            where TElement : Element;
+        List<TElement> CreateAllByLinkText<TElement>(string linkText)
+            where TElement : Element;
 
-        List<Element> CreateAll(FindStrategy findStrategy);
-        Element Create(FindStrategy findStrategy);
+        List<TElement> CreateAll<TElement>(FindStrategy findStrategy)
+            where TElement : Element;
+        TElement Create<TElement>(FindStrategy findStrategy)
+            where TElement : Element;
     }
 }
