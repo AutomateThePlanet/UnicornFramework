@@ -7,8 +7,11 @@ namespace Unicorn.Web.Services
 {
     public partial class WebCoreDriver : INavigationService
     {
-        public Uri Url => throw new NotImplementedException();
+        public Uri Url => new Uri(_webDriver.Url);
 
-        public void GoToUrl(string url) => throw new NotImplementedException();
+        public void GoToUrl(string url)
+        {
+            _webDriver.Navigate().GoToUrl(url);
+        }
     }
 }

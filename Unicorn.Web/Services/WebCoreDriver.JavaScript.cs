@@ -7,6 +7,9 @@ namespace Unicorn.Web.Services
 {
     public partial class WebCoreDriver : IJavaScriptService
     {
-        public object Execute(string script) => throw new NotImplementedException();
+        public object Execute(string script)
+        {
+            return ((IJavaScriptExecutor)_webDriver).ExecuteScript(script);
+        }
     }
 }

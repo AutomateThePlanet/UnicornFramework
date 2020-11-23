@@ -21,6 +21,6 @@ namespace Unicorn.Web
         List<Element> CreateAllByLinkText(string linkText);
 
         List<Element> CreateAll(FindStrategy findStrategy);
-        Element Find(FindStrategy findStrategy);
+        Element Create(FindStrategy findStrategy);
     }
 }

@@ -129,7 +129,7 @@ namespace Unicorn.Web.Services
 
         public Element Find(FindStrategy findStrategy)
         {
-            return base.Find(findStrategy);
+            return base.Create(findStrategy);
         }
 
         public List<Cookie> GetAllCookies()

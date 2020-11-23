@@ -21,6 +21,6 @@ namespace Unicorn.Web.Services
         public Element CreateByLinkText(string linkText) => throw new NotImplementedException();
         public Element CreateByTag(string tag) => throw new NotImplementedException();
         public Element CreateByXPath(string xpath) => throw new NotImplementedException();
-        public Element Find(FindStrategy findStrategy) => throw new NotImplementedException();
+        public Element Create(FindStrategy findStrategy) => throw new NotImplementedException();
     }
 }

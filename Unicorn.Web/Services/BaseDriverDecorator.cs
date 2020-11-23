@@ -117,9 +117,9 @@ namespace Unicorn.Web.Services
             return Driver?.Execute(script);
         }
 
-        public Element Find(FindStrategy findStrategy)
+        public Element Create(FindStrategy findStrategy)
         {
-            return Driver?.Find(findStrategy);
+            return Driver?.Create(findStrategy);
         }
 
         public List<Cookie> GetAllCookies()
