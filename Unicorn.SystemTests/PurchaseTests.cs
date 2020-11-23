@@ -1,5 +1,6 @@
 using NUnit.Framework;
 using Unicorn.Web;
+using Unicorn.Web.Components.Core;
 
 namespace Unicorn.SystemTests
 {
@@ -19,6 +20,9 @@ namespace Unicorn.SystemTests
         [Test]
         public void Test1()
         {
+            Button button = App.ElementCreateService.CreateById<Button>("myId");
+            button.Click();
+
             Assert.Pass();
         }
     }
