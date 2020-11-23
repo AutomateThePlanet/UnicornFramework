@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity;
 using Unity.Lifetime;
 
-namespace Unicorn.Container
+namespace Unicorn
 {
     public static class ServiceContainer
     {

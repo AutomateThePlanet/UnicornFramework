@@ -9,9 +9,9 @@ namespace Unicorn.NUnit
     {
         private readonly TestExecutionSubject _testExecutionSubject;
 
-        public BaseTest(TestExecutionSubject testExecutionSubject)
+        public BaseTest()
         {
-            _testExecutionSubject = testExecutionSubject;
+            _testExecutionSubject = new TestExecutionSubject();
         }
 
         public TestContext TestContext { get; set; }

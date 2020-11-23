@@ -11,6 +11,10 @@
 		<Folder Include="Pages\" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <ProjectReference Include="..\Unicorn.Web\Unicorn.Web.csproj" />
+	</ItemGroup>
+
 
 	<ItemGroup>
 		<None Update="testFrameworkSettings.$(Configuration).json">
