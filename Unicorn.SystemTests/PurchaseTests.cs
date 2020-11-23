@@ -20,7 +20,7 @@ namespace Unicorn.SystemTests
         [Test]
         public void Test1()
         {
-            Button button = App.ElementCreateService.CreateById<Button>("myId");
+            Button button = App.ElementCreateService.CreateById<Button>("myId").ToExists().ToBeClickable();
             button.Click();
 
             Assert.Pass();

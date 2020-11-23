@@ -9,7 +9,6 @@ using Unicorn.Web.WaitStrategies;
 
 namespace Unicorn.Web
 {
-    // TODO: implement IElementCreateService here.
     public abstract class Element : IElementCreateService
     {
         private List<WaitStrategy> _waitStrategies;

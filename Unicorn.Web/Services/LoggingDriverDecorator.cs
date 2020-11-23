@@ -92,11 +92,6 @@ namespace Unicorn.Web.Services
             return base.Release();
         }
 
-        public void Wait(Element element, WaitStrategy waitStrategy)
-        {
-            base.Wait(element, waitStrategy);
-        }
-
         public void WaitForAjax()
         {
             base.WaitForAjax();

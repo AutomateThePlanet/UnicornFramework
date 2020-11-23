@@ -52,11 +52,6 @@ namespace Unicorn.Web.Services
             return Driver?.Execute(script);
         }
 
-        public Element Create(FindStrategy findStrategy)
-        {
-            return Driver?.Create(findStrategy);
-        }
-
         public List<Cookie> GetAllCookies()
         {
             return Driver?.GetAllCookies();
@@ -90,11 +85,6 @@ namespace Unicorn.Web.Services
         public IInteractionsService Release()
         {
             return Driver?.Release();
-        }
-
-        public void Wait(Element element, WaitStrategy waitStrategy)
-        {
-            Driver?.Wait(element, waitStrategy);
         }
 
         public void WaitForAjax()
