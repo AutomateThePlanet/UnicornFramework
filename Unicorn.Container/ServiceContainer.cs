@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using Unity;
 using Unity.Lifetime;
 
@@ -45,6 +46,12 @@ namespace Unicorn
         public static void RegisterInstance<TFrom>(TFrom instance)
         {
             _container.RegisterInstance(instance, new ContainerControlledLifetimeManager());
+        }
+
+        public static void UnregisterInstance<TFrom>()
+        {
+            var registration = _container.Registrations.FirstOrDefault(r => r.RegisteredType.Equals(typeof(TFrom)));
+            registration.LifetimeManager.RemoveValue();
         }
     }
 }

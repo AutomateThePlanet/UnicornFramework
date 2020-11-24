@@ -1,13 +1,31 @@
 {
-  "timeoutSettings": {
-    "waitForAjaxTimeout": "30",
-    "sleepInterval": "1",
-    "elementToBeVisibleTimeout": "30",
-    "elementToExistTimeout": "30",
-    "elementToNotExistTimeout": "30",
-    "elementToBeClickableTimeout": "30",
-    "elementNotToBeVisibleTimeout": "30",
-    "elementToHaveContentTimeout": "15"
+  "webSettings": {
+    "timeoutSettings": {
+      "waitForAjaxTimeout": "30",
+      "sleepInterval": "1",
+      "elementToBeVisibleTimeout": "30",
+      "elementToExistTimeout": "30",
+      "elementToNotExistTimeout": "30",
+      "elementToBeClickableTimeout": "30",
+      "elementNotToBeVisibleTimeout": "30",
+      "elementToHaveContentTimeout": "15"
+    },
+    "chrome": {
+      "pageLoadTimeout": "120",
+      "scriptTimeout": "5"
+    },
+    "firefox": {
+      "pageLoadTimeout": "30",
+      "scriptTimeout": "1"
+    },
+    "edge": {
+      "pageLoadTimeout": "30",
+      "scriptTimeout": "1"
+    },
+    "safari": {
+      "pageLoadTimeout": "30",
+      "scriptTimeout": "1"
+    }
   },
   "loggingSettings": {
     "isEnabled": "true",
