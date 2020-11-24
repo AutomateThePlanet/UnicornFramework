@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Unicorn.Web.Configuration
+namespace Unicorn.Web
 {
     public class BrowserSettings
     {

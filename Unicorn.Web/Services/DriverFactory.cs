@@ -6,7 +6,6 @@ using OpenQA.Selenium.Safari;
 using System;
 using System.Collections.Generic;
 using System.Text;
-using Unicorn.Web.Configuration;
 using Unicorn.Web.Model;
 
 namespace Unicorn.Web.Services

@@ -16,7 +16,8 @@ namespace Unicorn.Web.Plugins.Browser
         public BrowserLaunchPluginObserver(TestExecutionSubject testExecutionSubject)
             : base(testExecutionSubject)
         {
-            _driverFactory = new DriverFactory();
+            _driverFactory = ServiceContainer.Resolve<DriverFactory>();
+            ServiceContainer.RegisterInstance(_driverFactory);
         }
 
         public override void PreTestInit(MemberInfo memberInfo)

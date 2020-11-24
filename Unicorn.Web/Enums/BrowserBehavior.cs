@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Unicorn.Web.Enums
+namespace Unicorn.Web
 {
     public enum BrowserBehavior
     {

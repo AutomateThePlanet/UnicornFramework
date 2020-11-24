@@ -64,7 +64,7 @@ namespace Unicorn.Web.Services
 
         public void GoToUrl(string url)
         {
-            Driver?.GetCookie(url);
+            Driver?.GoToUrl(url);
         }
 
         public void Handle(Action<IAlert> action = null, DialogButton dialogButton = DialogButton.Ok)

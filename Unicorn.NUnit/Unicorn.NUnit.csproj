@@ -6,6 +6,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <ProjectReference Include="..\Unicorn.Container\Unicorn.Container.csproj" />
 	  <ProjectReference Include="..\Unicorn.Plugins\Unicorn.Plugins.csproj" />
 	</ItemGroup>
 

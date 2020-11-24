@@ -1,5 +1,8 @@
 ﻿using NUnit.Framework;
 using System;
+using System.Diagnostics;
+using System.Linq;
+using System.Reflection;
 using Unicorn.Plugins;
 
 namespace Unicorn.NUnit
@@ -21,16 +24,17 @@ namespace Unicorn.NUnit
         [OneTimeSetUp]
         public void OneTimeSetUp()
         {
-            var memberInfo = GetType().GetMethod(TestContext.CurrentContext.Test.FullName);
-            _testExecutionSubject.PreClassInit(memberInfo);
-            ClassInit();
-            _testExecutionSubject.PostClassInit(memberInfo);
+            InitializeTestExecutionBehaviorObservers();
+            ////var memberInfo = GetCurrentExecutionTestClassType().GetMethod(TestContext.CurrentContext.Test.FullName);
+            ////_testExecutionSubject.PreClassInit(memberInfo);
+            ////ClassInit();
+            ////_testExecutionSubject.PostClassInit(memberInfo);
         }
 
         [SetUp]
         public void SetUp()
         {
-            var memberInfo = GetType().GetMethod(TestContext.CurrentContext.Test.FullName);
+            var memberInfo = GetCurrentExecutionTestClassType().GetMethod(TestContext.CurrentContext.Test.Name);
             _testExecutionSubject.PreTestInit(memberInfo);
             TestInit();
             _testExecutionSubject.PostTestInit(memberInfo);
@@ -39,7 +43,7 @@ namespace Unicorn.NUnit
         [TearDown]
         public void TearDown()
         {
-            var memberInfo = GetType().GetMethod(TestContext.CurrentContext.Test.FullName);
+            var memberInfo = GetCurrentExecutionTestClassType().GetMethod(TestContext.CurrentContext.Test.Name);
             var outcome = (TestOutcome)TestContext.CurrentContext.Result.Outcome.Status;
             _testExecutionSubject.PreTestCleanup(outcome, memberInfo);
             TestCleanup();
@@ -56,6 +60,21 @@ namespace Unicorn.NUnit
 
         public virtual void TestCleanup()
         {
+        }
+
+        private Type GetCurrentExecutionTestClassType()
+        {
+            Type testClassType = GetType().Assembly.GetType(TestContext.CurrentContext.Test.ClassName);
+            return testClassType;
+        }
+
+        private void InitializeTestExecutionBehaviorObservers()
+        {
+            var observers = ServiceContainer.ResolveAll<BaseTestExecutionPluginObserver>();
+            foreach (var observer in observers)
+            {
+                _testExecutionSubject.Attach(observer);
+            }
         }
     }
 }

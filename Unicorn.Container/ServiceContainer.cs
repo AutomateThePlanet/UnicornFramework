@@ -18,14 +18,30 @@ namespace Unicorn
 
         public static T Resolve<T>()
         {
-            T result = _container.Resolve<T>();
-            return result;
+            try
+            {
+                T result = _container.Resolve<T>();
+                return result;
+            }
+            catch (Exception)
+            {
+            }
+
+            return default;
         }
 
         public static IEnumerable<T> ResolveAll<T>()
         {
-            IEnumerable<T> result = _container.ResolveAll<T>();
-            return result;
+            try
+            {
+                IEnumerable<T> result = _container.ResolveAll<T>();
+                return result;
+            }
+            catch (Exception)
+            {
+            }
+
+            return null;
         }
 
         public static void RegisterType<TFrom, TTo>(string name)
@@ -51,7 +67,7 @@ namespace Unicorn
         public static void UnregisterInstance<TFrom>()
         {
             var registration = _container.Registrations.FirstOrDefault(r => r.RegisteredType.Equals(typeof(TFrom)));
-            registration.LifetimeManager.RemoveValue();
+            registration?.LifetimeManager?.RemoveValue();
         }
     }
 }

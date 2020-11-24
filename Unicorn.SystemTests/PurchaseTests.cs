@@ -1,10 +1,13 @@
 using NUnit.Framework;
 using Unicorn.Web;
 using Unicorn.Web.Components.Core;
+using Unicorn.Web.Enums;
+using Unicorn.Web.Plugins;
 
 namespace Unicorn.SystemTests
 {
     [TestFixture]
+    [ExecutionBrowser(Browser.Chrome, BrowserBehavior.RestartEveryTime)]
     public class PurchaseTests : WebTest
     {
         public override void ClassInit()
@@ -18,10 +21,11 @@ namespace Unicorn.SystemTests
         }
 
         [Test]
-        public void Test1()
+        public void CreateTestPurchase()
         {
-            Button button = App.ElementCreateService.CreateById<Button>("myId").ToExists().ToBeClickable();
-            button.Click();
+            App.NavigationService.GoToUrl("http://demos.bellatrix.solutions/");
+            ////Button button = App.ElementCreateService.CreateById<Button>("myId").ToExists().ToBeClickable();
+            ////button.Click();
 
             Assert.Pass();
         }
