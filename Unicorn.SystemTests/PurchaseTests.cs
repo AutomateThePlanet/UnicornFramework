@@ -43,7 +43,7 @@ namespace Unicorn.SystemTests
             _cartPage.ApplyCoupon("happybirthday");
             _cartPage.AssertCouponAppliedSuccessfully();
             _cartPage.IncreaseProductQuantity(2);
-            _cartPage.AssertTotalPrice("114.00ˆ");
+            _cartPage.AssertTotalPrice("114.00€");
             _cartPage.ClickProceedToCheckout();
 
             var purchaseInfo = new PurchaseInfo()
@@ -71,7 +71,7 @@ namespace Unicorn.SystemTests
             _cartPage.ApplyCoupon("happybirthday");
             _cartPage.AssertCouponAppliedSuccessfully();
             _cartPage.IncreaseProductQuantity(3);
-            _cartPage.AssertTotalPrice("355.00ˆ");
+            _cartPage.AssertTotalPrice("355.00€");
             _cartPage.ClickProceedToCheckout();
 
             var purchaseInfo = new PurchaseInfo()
@@ -108,7 +108,7 @@ namespace Unicorn.SystemTests
                 Phone = "+00498888999281",
             };
 
-            _purchaseFacade.PurchaseItem("Falcon 9", "happybirthday", 2, "114.00ˆ", purchaseInfo);
+            _purchaseFacade.PurchaseItem("Falcon 9", "happybirthday", 2, "114.00€", purchaseInfo);
         }
 
         [Test]
@@ -128,7 +128,7 @@ namespace Unicorn.SystemTests
                 Phone = "+00498888999281",
             };
 
-            _purchaseFacade.PurchaseItem("Saturn V", "happybirthday", 3, "355.00ˆ", purchaseInfo);
+            _purchaseFacade.PurchaseItem("Saturn V", "happybirthday", 3, "355.00€", purchaseInfo);
         }
     }
 }

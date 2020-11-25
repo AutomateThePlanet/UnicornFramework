@@ -27,7 +27,7 @@ namespace Unicorn.SystemTests
             _cartPage.ApplyCoupon(couponName);
             _cartPage.AssertMessageNotification("Coupon code applied successfully.");
             _cartPage.IncreaseProductQuantity(quantity);
-            ////_cartPage.AssertTotalPrice(expectedPrice);
+            _cartPage.AssertTotalPrice(expectedPrice);
             _cartPage.ClickProceedToCheckout();
             _checkoutPage.FillBillingInfo(purchaseInfo);
             _checkoutPage.AssertOrderReceived();
