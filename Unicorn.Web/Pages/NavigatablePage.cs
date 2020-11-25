@@ -13,11 +13,11 @@ namespace Unicorn.Web.Pages
 
         protected INavigationService NavigationService { get; }
 
-        public abstract Uri Url { get; set; }
+        public abstract string Url { get; }
 
         public void Open()
         {
-            NavigationService.GoToUrl(Url.ToString());
+            NavigationService.GoToUrl(Url);
             WaitForPageToLoad();
         }
 

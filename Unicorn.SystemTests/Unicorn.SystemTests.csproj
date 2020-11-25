@@ -10,10 +10,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<Folder Include="Pages\" />
-	</ItemGroup>
-
-	<ItemGroup>
 	  <ProjectReference Include="..\Unicorn.Web.Plugins.Browser\Unicorn.Web.Plugins.Browser.csproj" />
 	  <ProjectReference Include="..\Unicorn.Web\Unicorn.Web.csproj" />
 	</ItemGroup>

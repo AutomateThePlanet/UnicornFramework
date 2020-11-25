@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Unicorn.Web.Components.Core
+namespace Unicorn.Web
 {
     public class Button : Element
     {
