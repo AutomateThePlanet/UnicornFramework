@@ -10,7 +10,7 @@ namespace Unicorn.Web.WaitStrategies
         public ToExistsWaitStrategy(int? timeoutIntervalSeconds = null, int? sleepIntervalSeconds = null)
             : base(timeoutIntervalSeconds, sleepIntervalSeconds)
         {
-            int timeoutSeconds = timeoutIntervalSeconds ?? ConfigurationService.GetSection<TimeoutSettings>().ElementToExistTimeout;
+            int timeoutSeconds = timeoutIntervalSeconds ?? ConfigurationService.GetSection<WebSettings>().TimeoutSettings.ElementToExistTimeout;
             TimeoutInterval = TimeSpan.FromSeconds(timeoutSeconds);
         }
 

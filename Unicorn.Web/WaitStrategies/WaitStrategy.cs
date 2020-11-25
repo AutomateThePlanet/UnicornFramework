@@ -13,7 +13,7 @@ namespace Unicorn.Web
         protected WaitStrategy(int? timeoutIntervalSeconds = null, int? sleepIntervalSeconds = null)
         {
             TimeoutInterval = TimeSpan.FromSeconds(timeoutIntervalSeconds ?? DEFAULT_TIMEOUT);
-            SleepInterval = TimeSpan.FromSeconds(sleepIntervalSeconds ?? ConfigurationService.GetSection<TimeoutSettings>().SleepInterval);
+            SleepInterval = TimeSpan.FromSeconds(sleepIntervalSeconds ?? ConfigurationService.GetSection<WebSettings>().TimeoutSettings.SleepInterval);
         }
 
         protected TimeSpan TimeoutInterval { get; set; }

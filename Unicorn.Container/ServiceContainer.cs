@@ -75,7 +75,7 @@ namespace Unicorn
 
         public static void RegisterInstance<TFrom>(TFrom instance)
         {
-            _container.RegisterInstance(instance, new ContainerControlledLifetimeManager());
+            _container.RegisterInstance(typeof(TFrom), instance, new ContainerControlledLifetimeManager());
         }
 
         public static void RegisterInstance<TFrom>(TFrom instance, string uniqueName)

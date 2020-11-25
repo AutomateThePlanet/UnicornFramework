@@ -10,7 +10,7 @@ namespace Unicorn.Web.WaitStrategies
         public ToBeVisibleWaitStrategy(int? timeoutIntervalSeconds = null, int? sleepIntervalSeconds = null)
             : base(timeoutIntervalSeconds, sleepIntervalSeconds)
         {
-            int timeoutSeconds = timeoutIntervalSeconds ?? ConfigurationService.GetSection<TimeoutSettings>().ElementToBeVisibleTimeout;
+            int timeoutSeconds = timeoutIntervalSeconds ?? ConfigurationService.GetSection<WebSettings>().TimeoutSettings.ElementToBeVisibleTimeout;
             TimeoutInterval = TimeSpan.FromSeconds(timeoutSeconds);
         }
 

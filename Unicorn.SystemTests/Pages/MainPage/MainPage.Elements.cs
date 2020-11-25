@@ -8,9 +8,10 @@ namespace Unicorn.SystemTests.Pages.MainPage
 {
     public partial class MainPage
     {
-        public Anchor AddToCartFalcon9 => ElementCreateService.CreateByCss<Anchor>("[data-product_id='28']");
+        public Anchor AddToCartFalcon9Button => ElementCreateService.CreateByCss<Anchor>("[data-product_id='28']");
 
         public Button ViewCartButton => ElementCreateService.CreateByCss<Button>("[class*='added_to_cart wc-forward']");
+        public Button AddToCartButton => ElementCreateService.CreateByLinkText<Button>("Add to cart");
 
         public Anchor GetProductBoxByName(string name)
         {

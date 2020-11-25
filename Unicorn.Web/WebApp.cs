@@ -13,8 +13,7 @@ namespace Unicorn.Web
 
         public WebApp()
         {
-            var webCoreDriver = ServiceContainer.Resolve<WebCoreDriver>();
-            _driver = new LoggingDriverDecorator(webCoreDriver);
+            _driver = ServiceContainer.Resolve<IDriver>();
         }
 
         public IElementCreateService ElementCreateService => _driver;

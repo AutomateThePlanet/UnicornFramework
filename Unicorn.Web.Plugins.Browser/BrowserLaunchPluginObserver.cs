@@ -36,6 +36,9 @@ namespace Unicorn.Web.Plugins.Browser
         {
             _driverFactory.Dispose();
             _driverFactory.Start(_currentBrowserConfiguration);
+            var webCoreDriver = ServiceContainer.Resolve<WebCoreDriver>();
+            var driver = new LoggingDriverDecorator(webCoreDriver);
+            ServiceContainer.RegisterInstance<IDriver>(driver);
         }
 
         private bool ShouldRestartBrowser(BrowserConfiguration browserConfiguration)

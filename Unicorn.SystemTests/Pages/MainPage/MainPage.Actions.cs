@@ -15,7 +15,7 @@ namespace Unicorn.SystemTests.Pages.MainPage
 
         public override void WaitForPageToLoad()
         {
-            AddToCartFalcon9.ToExists().WaitToBe();
+            AddToCartFalcon9Button.ToExists().WaitToBe();
         }
 
         public void AddRocketToShoppingCart(string rocketName)
@@ -23,6 +23,7 @@ namespace Unicorn.SystemTests.Pages.MainPage
             Open();
             GetProductBoxByName(rocketName).Click();
             BrowserService.WaitForAjax();
+            AddToCartButton.Click();
             ViewCartButton.Click();
         }
     }
