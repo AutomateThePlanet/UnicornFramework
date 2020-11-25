@@ -13,7 +13,6 @@
 	  <ProjectReference Include="..\Unicorn.NUnit\Unicorn.NUnit.csproj" />
 	</ItemGroup>
 	<ItemGroup>
-	  <Folder Include="Pages\" />
 	  <Folder Include="SmartAssertions\" />
 	</ItemGroup>
 </Project>

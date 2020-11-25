@@ -3,6 +3,7 @@
     public enum Browser
     {
         Chrome,
+        ChromeHeadless,
         Firefox,
         Edge,
         Opera,

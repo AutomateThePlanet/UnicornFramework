@@ -1,4 +1,6 @@
 using NUnit.Framework;
+using OpenQA.Selenium;
+using OpenQA.Selenium.Chrome;
 using Unicorn.Web;
 using Unicorn.Web.Components.Core;
 using Unicorn.Web.Enums;
@@ -12,6 +14,10 @@ namespace Unicorn.SystemTests
     {
         public override void ClassInit()
         {
+            ChromeOptions chromeOptions = new ();
+            chromeOptions.PageLoadStrategy = PageLoadStrategy.Eager;
+            App.AddBrowserOptions(chromeOptions);
+
             System.Console.WriteLine("Once per class.");
         }
 

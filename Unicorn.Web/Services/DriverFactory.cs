@@ -47,6 +47,16 @@ namespace Unicorn.Web.Services
                     driver.Manage().Timeouts().PageLoad = TimeSpan.FromSeconds(ConfigurationService.GetSection<WebSettings>().Chrome.PageLoadTimeout);
                     driver.Manage().Timeouts().AsynchronousJavaScript = TimeSpan.FromSeconds(ConfigurationService.GetSection<WebSettings>().Chrome.ScriptTimeout);
                     break;
+                case Browser.ChromeHeadless:
+                    // TODO: change it with the correct test class fullname.
+                    // Refactor plugins to pass the test class fullname.
+                    var chromeOptions = ServiceContainer.Resolve<ChromeOptions>("testClassFullName");
+                    chromeOptions.AddArguments("--headless");
+                    chromeOptions.AddArguments("--log-level=3");
+                    driver = new ChromeDriver(Environment.CurrentDirectory, chromeOptions);
+                    driver.Manage().Timeouts().PageLoad = TimeSpan.FromSeconds(ConfigurationService.GetSection<WebSettings>().Chrome.PageLoadTimeout);
+                    driver.Manage().Timeouts().AsynchronousJavaScript = TimeSpan.FromSeconds(ConfigurationService.GetSection<WebSettings>().Chrome.ScriptTimeout);
+                    break;
                 case Browser.Firefox:
                     driver = new FirefoxDriver(Environment.CurrentDirectory);
                     driver.Manage().Timeouts().PageLoad = TimeSpan.FromSeconds(ConfigurationService.GetSection<WebSettings>().Firefox.PageLoadTimeout);
